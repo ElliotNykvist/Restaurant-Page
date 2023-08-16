@@ -11,7 +11,7 @@ function createHeader() {
     const scroll = document.createElement('div');
     scroll.classList.add('scroll-trigger');
 
-    header.appendChild(resyBtn());
+    header.appendChild(createResyBtn());
     header.appendChild(createNav());
     header.appendChild(scroll());
     
@@ -20,7 +20,10 @@ function createHeader() {
 
 function createResyBtn() {
     const resyBtn = document.createElement('button');
+    resyBtn.textContent = ('Reservation');
     resyBtn.classList.add('resy');
+
+    return resyBtn;
 
 };
 
@@ -94,7 +97,13 @@ function createNav() {
 
     nav.appendChild('rightHeader');
 
-
-
+    return nav;
 
 };
+
+function loadPage() {
+    const content = document.getElementById('content');
+    content.appendChild('header');  
+}
+
+export default loadPage;
