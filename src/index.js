@@ -6,22 +6,18 @@ import loadContact from './modules/contact';
 init();
 
 function addNavEvents() {
-    const homeBtn = document.getElementById('home');
-    const menuBtn = document.getElementById('menu');
-    const contactBtn = document.getElementById('contact');
+  const homeBtn = document.getElementById('home');
+  const menuBtn = document.getElementById('menu');
+  const contactBtn = document.getElementById('contact');
 
-    homeBtn.addEventListener('click', loadHome);
-    menuBtn.addEventListener('click', loadMenu);
-    contactBtn.addEventListener('click', loadContact);
-
-};
-
-
-function init() {
-    loadPage();
-    loadHome();
-    addNavEvents();
+  homeBtn.addEventListener('click', loadHome);
+  menuBtn.addEventListener('click', loadMenu);
+  contactBtn.addEventListener('click', loadContact);
 }
-
+function init() {
+  loadPage();
+  loadHome();
+  addNavEvents();
+}
 
 
