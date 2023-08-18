@@ -49,15 +49,41 @@ function createNav() {
 
     const homeList = document.createElement('li');
     homeList.textContent = 'Home';
-    homeList.classList.add('active');
+    homeList.classList.add('button-nav');
+    homeList.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) {
+            return;
+        }
+
+        setActiveButton(homeList);
+        loadHome();
+    });
 
     const menuList = document.createElement('li');
     menuList.textContent = 'Menu';
-    menuList.classList.add('not-active');
+    menuList.classList.add('button-nav');
+    menuList.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) {
+            return;
+        }
+
+        setActiveButton(menuList);
+        loadMeny();
+        
+    });
 
     const contactList = document.createElement('li');
     contactList.textContent = 'Contact';
-    contactList.classList.add('not-active');
+    contactList.classList.add('button-nav');
+
+    contactList.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) {
+            return;
+        }
+
+        setActiveButton(contactList);
+        loadContact();
+    });
 
     list.appendChild(homeList);
     list.appendChild(menuList);
@@ -85,12 +111,31 @@ function createNav() {
     nav.appendChild(rightHeader);
 
     return nav;
-}
+};
+
+function setActiveButton(clickedButton) {
+    const buttons = document.querySelectorAll(".button-nav");
+  
+    buttons.forEach((button) => {
+        if (button !== clickedButton) {
+            button.setAttribute('id', 'not-active'); // Add 'not-active' attribute
+        } else {
+            button.removeAttribute('id', 'not-active'); // Remove 'not-active' attribute
+        }
+        
+        button.classList.remove("active"); // Always remove 'active' class from all buttons
+    });
+
+    clickedButton.classList.add("active"); // Add 'active' class to the clicked button
+};
+
+
 
 function loadPage() {
     const content = document.getElementById('content');
     const header = createHeader();
     content.appendChild(header);
+    
     
     window.addEventListener("scroll", function() {
         var scrollTrigger = document.querySelector(".scroll-trigger");
@@ -102,6 +147,9 @@ function loadPage() {
             nav.classList.remove("scrolled-nav");
         }
     });
+
+    setActiveButton(document.querySelector(".button-nav"));
+    loadHome();
 }
 
 export default loadPage;

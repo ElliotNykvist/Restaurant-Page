@@ -87,7 +87,7 @@ header {
   font-size: 90%;
 }
 
-.scrolled-nav .not-active::after {
+.scrolled-nav #not-active::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -174,9 +174,9 @@ ul {
 
 
 .active {
-  text-decoration: underline 4px white;
+  text-decoration: underline 4px rgb(255, 255, 255);
   text-underline-offset: 6px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 a {
@@ -185,7 +185,7 @@ a {
   margin:0
 }
 
-.not-active {
+#not-active {
   display: inline-block;
   position: relative;
   color: #fff9f9;
@@ -193,7 +193,7 @@ a {
 
 
 
-.not-active::after {
+#not-active::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -206,7 +206,7 @@ a {
   transition: transform 0.25s ease-out;
 }
 
-.not-active:hover::after {
+#not-active:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
   color: white;
