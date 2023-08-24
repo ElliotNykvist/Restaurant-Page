@@ -177,7 +177,8 @@ a {
   align-items: center;
   gap: 6vh;
   padding-top: 300px;
-  padding-bottom: 250px;
+  padding-bottom: 200px;
+  border-bottom: solid black 1px;
 }
 
 .about div {
@@ -206,12 +207,12 @@ a {
 
 /* Contact section styles */
 .contact {
-  height: 100vh;
+  height: 70vh;
   background-color: #fff;
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-around;
-  padding: 20vh 0;
+  padding-top: 20vh;
   font-size: clamp(1rem, 1.4vw, 2rem);
 }
 
