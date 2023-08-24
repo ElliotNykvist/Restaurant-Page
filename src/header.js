@@ -37,6 +37,7 @@ function createHeader() {
   contactBtn.setAttribute('id', 'not-active')
   contactBtn.classList.add('tab');
   contactBtn.textContent = 'Contact';
+  
 
   buttons.appendChild(homeBtn);
   buttons.appendChild(menuBtn);

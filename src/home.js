@@ -66,7 +66,7 @@ function createHome() {
   const addressTitle = document.createElement('div');
   addressTitle.textContent = ("Address");
   const addressContent = document.createElement('p');
-  addressContent.textContent = (`831 Bottom Feeder Lane \r\n Bikini Bottom \r\n Pacific Ocean`);
+  addressContent.textContent = (`123 Serendipity Street \r\n Wonderland City \r\n Enchanted Forest`);
 
   address.appendChild(addressIcon);
   address.appendChild(addressTitle);
