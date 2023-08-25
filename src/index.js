@@ -6,7 +6,7 @@ import createContact from "./contact"
 
 function navTabs(header) {
   const pageContent = document.getElementById("pageLoadContainer");
-  const tabs = header.querySelectorAll('li'); // Get elements with the class "tab" inside the header
+  const tabs = header.querySelectorAll('.tab'); // Get elements with the class "tab" inside the header
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -19,9 +19,11 @@ function navTabs(header) {
       } else if (tab.textContent === "Menu") {
         // Append the content from createMenu to pageContent
         pageContent.appendChild(createMenu());
+      } else if (tab.textContent === "Contact"){
+        pageContent.appendChild(createContact());
       } else {
         pageContent.appendChild(createContact());
-      }
+      };
     });
   });
 }

@@ -20,6 +20,7 @@ function createHome() {
   const resyBtn = document.createElement('button');
   resyBtn.textContent = ("Reservation");
   resyBtn.classList.add('resy');
+  resyBtn.classList.add('tab')
 
   introContent.appendChild(firstTitle);
   introContent.appendChild(subTitle);
