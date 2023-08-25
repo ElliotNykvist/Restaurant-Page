@@ -373,3 +373,78 @@ footer {
   text-align: center;
   text-decoration: underline;
 }
+
+#contact {
+  background-color: #ffffff;
+  padding: 60px;
+}
+
+/* Styles for the section header */
+.section-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the contact form container */
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles for the contact form */
+#contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+/* Styles for form groups and input fields */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+}
+
+/* Styles for the submit button */
+.send-button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Styles for the direct contact container */
+.direct-contact-container {
+  margin-top: 20px;
+}
+
+.contact-list li i{
+  margin: 20px;
+
+}
+/* Styles for the contact list items */
+.contact-list li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* Styles for social media icons */
+.social-media-list a {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #007bff;
+}
+
+/* Styles for the copyright text */
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+

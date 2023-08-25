@@ -2,6 +2,7 @@ import createHeader from "./header";
 import createFooter from "./footer";
 import createHome from "./home";
 import createMenu from "./menu";
+import createContact from "./contact"
 
 function navTabs(header) {
   const pageContent = document.getElementById("pageLoadContainer");
@@ -15,9 +16,11 @@ function navTabs(header) {
       if (tab.textContent === "Home") {
         // Append the content from createHome to pageContent
         pageContent.appendChild(createHome());
-      } else {
+      } else if (tab.textContent === "Menu") {
         // Append the content from createMenu to pageContent
         pageContent.appendChild(createMenu());
+      } else {
+        pageContent.appendChild(createContact());
       }
     });
   });
