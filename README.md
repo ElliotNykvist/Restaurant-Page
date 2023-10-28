@@ -17,5 +17,6 @@ Resturant website made as a assignment for The Odin Project
 
 ## Images
 
-![This is an alt text.](https://elliotnykvist.github.io/Restaurant-Page/)
+![This is an alt text.](https://github.com/ElliotNykvist/Restaurant-Page/assets/126269599/3ece61ff-d8f3-4eb1-876c-87f719551787)
+
 
