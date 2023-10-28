@@ -26,6 +26,12 @@ body {
   font-family: mySecondFont, sans-serif;
 }
 
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /* Header section styles */
 .header {
   display: flex;
@@ -123,6 +129,7 @@ button:hover {
   position: relative;
   top: 0;
   left: 0;
+  margin-bottom: 30px;
 }
 
 .intro-background {
@@ -335,7 +342,7 @@ footer {
   grid-template-rows: 4fr repeat(14, 1fr);
   grid-template-columns: 4fr 1fr 4fr 1fr;
   margin: 0;
-  padding: 20px;
+  padding: 40px;
   gap: 2px 2px 8px;
   font-size: clamp(1rem, 1.25vw, 2rem);
   background-color: white;
@@ -343,11 +350,14 @@ footer {
   height: 80vh;
   border: 5px solid black;
   border-radius: 5%;
+  overflow: auto;
   
 }
 
 .menuBackground p {
   padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .menuBackground p:hover {
@@ -375,20 +385,26 @@ footer {
 }
 
 #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-color: #ffffff;
-  padding: 60px;
 }
 
 /* Styles for the section header */
 .section-header {
+  display: flex;
+  justify-content: center;
   font-size: 24px;
-  margin-bottom: 20px;
 }
 
 /* Styles for the contact form container */
 .contact-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -436,6 +452,15 @@ footer {
 }
 
 /* Styles for social media icons */
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
 .social-media-list a {
   margin-right: 10px;
   font-size: 24px;
@@ -448,3 +473,18 @@ footer {
   margin-top: 20px;
 }
 
+input {
+  padding: 0.65rem;
+  border-radius: 10px;
+  border: 1px solid black;
+
+}
+
+textarea {
+  padding: 0.65rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 16px;
+
+
+}
